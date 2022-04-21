@@ -46,9 +46,12 @@ h3,
     font-family: 'Fraunces', serif;
     font-weight: 900;
 }
-h3{
-    font-size: 28px;;
+
+h3 {
+    font-size: 28px;
+    ;
 }
+
 /* -----Gestion header------*/
 header {
     width: 100%;
@@ -97,6 +100,7 @@ header nav a.btn {
 }
 
 /*----gestion hero banner-----*/
+
 #hero {
     background: no-repeat center/cover url("./images/desktop/image-header.jpg");
     display: flex;
@@ -198,10 +202,12 @@ header nav a.btn {
     gap: 2vh;
     text-align: center;
 }
-p.dark-blue{
-    color:var(--dark-blue);
+
+p.dark-blue {
+    color: var(--dark-blue);
 }
-p.dark-moderate{
+
+p.dark-moderate {
     color: var(--dark-moderate);
 }
 
@@ -213,13 +219,15 @@ p.dark-moderate{
     align-items: center;
     padding: 12vh;
 }
-.testimonials h3{
+
+.testimonials h3 {
     text-transform: uppercase;
     color: var(--grayish-blue);
     font-size: 18px;
     letter-spacing: 0.25rem;
     margin-bottom: 5vh;
 }
+
 .testimonials .clients-container {
     display: flex;
     width: 100%;
@@ -241,47 +249,55 @@ p.dark-moderate{
     width: 50px;
     border-radius: 50%;
 }
-.client-comment{
-    color:var(--very-dark-grayish-blue);
+
+.client-comment {
+    color: var(--very-dark-grayish-blue);
 }
-.client-name{
+
+.client-name {
     font-size: 18px;
     color: var(--very-dark-blue);
     margin-bottom: 7px;
 }
-.client-job{
+
+.client-job {
     font-size: 14px;
     color: var(--dark-grayish-blue);
 }
 
 /* ====gallery===== */
 
-.gallery{
+.gallery {
     display: flex;
     width: 100%;
     height: 50vh;
 }
-.gallery img{
+
+.gallery img {
     width: 25%;
     object-fit: cover;
-    
+
 }
+
 /* =======footer====== */
-footer{
-    background-color: rgba(144,212,197,255) ;
+footer {
+    background-color: rgba(144, 212, 197, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5vh;
     gap: 5vh;
 }
-.logo{
+
+.logo {
     color: var(--dark-desaturated)
 }
-footer .link a{
+
+footer .link a {
     color: var(--dark-moderate);
 }
-footer .link{
+
+footer .link {
     text-transform: capitalize;
     width: 100%;
     display: flex;
@@ -289,7 +305,8 @@ footer .link{
     gap: 35px;
 
 }
-footer .socials{
+
+footer .socials {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -363,51 +380,61 @@ footer .socials{
     }
 
     /* main gestion  */
-    .article{
+    .article {
         display: flex;
         flex-direction: column;
         height: 100vh;
     }
-    .article .txt-content{
+
+    .article .txt-content {
         width: 100%;
         height: 50vh;
     }
-    .article img{
+
+    .article img {
         width: 100%;
         height: 50vh;
         order: -1;
     }
+
     /* txt image background */
-    .image-txt-container{
+    .image-txt-container {
         flex-direction: column;
         height: 100vh;
     }
-    .content{
+
+    .content {
         width: 100%;
         height: 55vh;
     }
-    .content-txt{
+
+    .content-txt {
         width: 100%;
         margin-bottom: 35px;
     }
+
     /* .testimonials */
-    .testimonials{
+    .testimonials {
         padding: 5vh;
     }
-    .testimonials h3{
+
+    .testimonials h3 {
         margin-top: 3vh;
     }
-    .clients-container{
+
+    .clients-container {
         flex-direction: column;
     }
+
     /* gallery */
-    .gallery{
+    .gallery {
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         height: inherit;
     }
-    .gallery img{
+
+    .gallery img {
         width: 100%;
     }
-    
+
 }
