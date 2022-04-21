@@ -98,7 +98,7 @@ header nav a.btn {
 
 /*----gestion hero banner-----*/
 #hero {
-    background: no-repeat center/cover url("/images/desktop/image-header.jpg");
+    background: no-repeat center/cover url("./images/desktop/image-header.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +173,7 @@ header nav a.btn {
 }
 
 .content.img1 {
-    background: no-repeat url("/images/desktop/image-graphic-design.jpg");
+    background: no-repeat url("./images/desktop/image-graphic-design.jpg");
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -183,7 +183,7 @@ header nav a.btn {
 }
 
 .content.img2 {
-    background: no-repeat url("/images/desktop/image-photography.jpg");
+    background: no-repeat url("./images/desktop/image-photography.jpg");
     background-position: 50% 50%;
     background-size: cover, auto, contain;
 }
