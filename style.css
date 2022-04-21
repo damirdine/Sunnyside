@@ -32,6 +32,12 @@ html{
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
 }
+h3,
+.article-link{
+    font-family: 'Fraunces',serif;
+    font-weight: 900;
+}
+
 /* -----Gestion header------*/
 header{
     width: 100%;
@@ -73,7 +79,7 @@ header nav a.btn{
     color: var(--white);
 }
 
-/*----gestion hero banner*/
+/*----gestion hero banner-----*/
 #hero{
     background: no-repeat center/cover url("/images/desktop/image-header.jpg");
     display: flex;
@@ -92,8 +98,73 @@ header nav a.btn{
     color: var(--white);
     letter-spacing: 11.6px;
     text-align: center;
+    padding: 5vw;
+}
+/*=======main gestion ====*/
+
+/* article */
+.article{
+    display: flex;
+    height: 50vh;
+}
+.article .txt-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 6vw;
+}
+.article .txt-content p{
+   color: var(--dark-grayish-blue);
+}
+.article img{
+    width: 50%;
+    object-fit: cover;
+}
+.article-link{
+    text-transform: uppercase;
+}
+.article.image-right img{
+    order: -1;
+}
+.article.image-left{
+    order: 1;
+}
+/* image with content */
+.image-txt-container{
+    display: flex;
+    height: 50vh;
+}
+.content{
+    width: 50%;
+    padding: 5vw;
+    display: flex;
+    align-items: flex-end;
+    height: 50vh;
+}
+.content.img1{
+    background: no-repeat url("/images/desktop/image-graphic-design.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.content.img1 .content-txt h3{
+    color: var(--dark-blue);
+}
+.content.img2{
+    background: no-repeat url("/images/desktop/image-photography.jpg");
+    background-position: 50% 50%;
+    background-size: cover, auto, contain;
+}
+.content.img2 .content-txt h3{
+    color: var(--dark-blue);
+}
+.content-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 @media screen and (max-width:432px) {
+/* header mobile  */
     header{
         flex-direction: column;
         padding: 5%;
@@ -107,7 +178,6 @@ header nav a.btn{
     header .header .burger-menu{
         display: inline;
         cursor: pointer;
-        width: 30px;
     }
     header nav {
         display: none;
@@ -128,11 +198,22 @@ header nav a.btn{
         right: 5vw;
         
     }
+    .nav.active{
+        display: flex;
+    }
     header nav a{
         color: var(--dark-grayish-blue);    
     }
     header nav a.btn{
         background-color: var(--yellow);
         color: black;
+    }
+    .btn:active{
+        background-color: hsla(51, 100%, 49%,0.20);
+        color: black;
+    }
+/* main gestion  */
+    .container{
+
     }
 }
