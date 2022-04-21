@@ -2,13 +2,16 @@
 
 /* css variable */
 
-:root{
+:root {
     /*Primary colors*/
     --soft-red: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
-    --dark-moderate : hsl(168, 34%, 41%);/*cyan (footer)*/
-    --dark-desaturated : hsl(167, 40%, 24%);/*cyan(graphic design text)*/
-    --dark-blue : hsl(198, 62%, 26%);/*(photography text)*/
+    --dark-moderate: hsl(168, 34%, 41%);
+    /*cyan (footer)*/
+    --dark-desaturated: hsl(167, 40%, 24%);
+    /*cyan(graphic design text)*/
+    --dark-blue: hsl(198, 62%, 26%);
+    /*(photography text)*/
     /*neutral colors*/
     --very-dark-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -21,50 +24,63 @@
 
 *,
 *:before,
-*:after{
+*:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
 }
-html{
+
+html {
     font-family: 'Barlow', sans-serif;
-    font-size: 18px;
-}
-h3,
-.article-link{
-    font-family: 'Fraunces',serif;
-    font-weight: 900;
+    font-size: 15px;
+    word-break: break-all;
 }
 
+h3,
+.article-link,
+.content-txt h3,
+.client-name,
+#hero h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+h3{
+    font-size: 28px;;
+}
 /* -----Gestion header------*/
-header{
+header {
     width: 100%;
     position: absolute;
-    top:0;left: 0;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.25% 2.5%;
 }
-.header .burger-menu{
+
+.header .burger-menu {
     display: none;
 }
+
 /* header nav gestion */
-header nav{
+header nav {
     display: flex;
-    justify-content:right;
+    justify-content: right;
     align-items: center;
     width: 100%;
     gap: 25px;
-    
+
 }
+
 header nav a {
     text-transform: capitalize;
     color: var(--white);
 }
-header nav a.btn{
+
+header nav a.btn {
     text-transform: uppercase;
     border-radius: 40px;
     background-color: var(--white);
@@ -74,13 +90,14 @@ header nav a.btn{
     font-weight: 900;
     font-size: 15px;
 }
-.btn:active{
-    background-color: hsla(0, 0%, 100%,0.20);
+
+.btn:active {
+    background-color: hsla(0, 0%, 100%, 0.20);
     color: var(--white);
 }
 
 /*----gestion hero banner-----*/
-#hero{
+#hero {
     background: no-repeat center/cover url("/images/desktop/image-header.jpg");
     display: flex;
     flex-direction: column;
@@ -90,9 +107,8 @@ header nav a.btn{
     width: 100%;
     gap: 30vh;
 }
-#hero h2{
-    font-family: 'Fraunces',serif;
-    font-weight: 900;
+
+#hero h2 {
     font-size: 38px;
     text-transform: uppercase;
     color: var(--white);
@@ -100,85 +116,213 @@ header nav a.btn{
     text-align: center;
     padding: 5vw;
 }
-/*=======main gestion ====*/
+
+/*=====ABOUT ====*/
 
 /* article */
-.article{
+.article {
     display: flex;
     height: 50vh;
 }
-.article .txt-content{
+
+.article .txt-content {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 6vw;
 }
-.article .txt-content p{
-   color: var(--dark-grayish-blue);
+
+.article .txt-content p {
+    color: var(--dark-grayish-blue);
 }
-.article img{
+
+.article .txt-content h3 {
+    font-size: 28px;
+}
+
+.article img {
     width: 50%;
     object-fit: cover;
 }
-.article-link{
+
+.article-link {
     text-transform: uppercase;
 }
-.article.image-right img{
+
+.article.image-right img {
     order: -1;
 }
-.article.image-left{
+
+.article.image-left {
     order: 1;
 }
+
 /* image with content */
-.image-txt-container{
+.image-txt-container {
     display: flex;
     height: 50vh;
 }
-.content{
+
+.content {
     width: 50%;
     padding: 5vw;
     display: flex;
     align-items: flex-end;
     height: 50vh;
 }
-.content.img1{
+
+.content.img1 {
     background: no-repeat url("/images/desktop/image-graphic-design.jpg");
     background-position: 50% 50%;
     background-size: cover;
 }
-.content.img1 .content-txt h3{
-    color: var(--dark-blue);
+
+.content.img1 .content-txt h3 {
+    color: var(--dark-desaturated);
 }
-.content.img2{
+
+.content.img2 {
     background: no-repeat url("/images/desktop/image-photography.jpg");
     background-position: 50% 50%;
     background-size: cover, auto, contain;
 }
-.content.img2 .content-txt h3{
+
+.content.img2 .content-txt h3 {
     color: var(--dark-blue);
 }
-.content-txt{
+
+.content-txt {
     display: flex;
     flex-direction: column;
+    gap: 2vh;
     text-align: center;
 }
+p.dark-blue{
+    color:var(--dark-blue);
+}
+p.dark-moderate{
+    color: var(--dark-moderate);
+}
+
+/* ====testimonials===== */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12vh;
+}
+.testimonials h3{
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    font-size: 18px;
+    letter-spacing: 0.25rem;
+    margin-bottom: 5vh;
+}
+.testimonials .clients-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5vw;
+
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.client-pic {
+    width: 50px;
+    border-radius: 50%;
+}
+.client-comment{
+    color:var(--very-dark-grayish-blue);
+}
+.client-name{
+    font-size: 18px;
+    color: var(--very-dark-blue);
+    margin-bottom: 7px;
+}
+.client-job{
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+}
+
+/* ====gallery===== */
+
+.gallery{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+.gallery img{
+    width: 25%;
+    object-fit: cover;
+    
+}
+/* =======footer====== */
+footer{
+    background-color: rgba(144,212,197,255) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    gap: 5vh;
+}
+.logo{
+    color: var(--dark-desaturated)
+}
+footer .link a{
+    color: var(--dark-moderate);
+}
+footer .link{
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+
+}
+footer .socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* =====================================
+========================================
+            Mobile RESPONSIVE
+========================================
+========================================
+ */
+
 @media screen and (max-width:432px) {
-/* header mobile  */
-    header{
+
+    /* header mobile  */
+    header {
         flex-direction: column;
         padding: 5%;
     }
-    header .header{
+
+    header .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
-    header .header .burger-menu{
+
+    header .header .burger-menu {
         display: inline;
         cursor: pointer;
     }
+
     header nav {
         display: none;
         margin-top: 25px;
@@ -188,32 +332,82 @@ header nav a.btn{
         gap: 40px;
         background-color: var(--white);
     }
-    header nav::after{
-        content:'';
-        width:50px;
-        height:50px;
-        background: linear-gradient(to bottom right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, var(--white) 50%, var(--white) 100%);
+
+    header nav::after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, var(--white) 50%, var(--white) 100%);
         position: absolute;
         top: 55px;
         right: 5vw;
-        
+
     }
-    .nav.active{
+
+    .nav.active {
         display: flex;
     }
-    header nav a{
-        color: var(--dark-grayish-blue);    
+
+    header nav a {
+        color: var(--dark-grayish-blue);
     }
-    header nav a.btn{
+
+    header nav a.btn {
         background-color: var(--yellow);
         color: black;
     }
-    .btn:active{
-        background-color: hsla(51, 100%, 49%,0.20);
+
+    .btn:active {
+        background-color: hsla(51, 100%, 49%, 0.20);
         color: black;
     }
-/* main gestion  */
-    .container{
 
+    /* main gestion  */
+    .article{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
+    .article .txt-content{
+        width: 100%;
+        height: 50vh;
+    }
+    .article img{
+        width: 100%;
+        height: 50vh;
+        order: -1;
+    }
+    /* txt image background */
+    .image-txt-container{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .content{
+        width: 100%;
+        height: 55vh;
+    }
+    .content-txt{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    /* .testimonials */
+    .testimonials{
+        padding: 5vh;
+    }
+    .testimonials h3{
+        margin-top: 3vh;
+    }
+    .clients-container{
+        flex-direction: column;
+    }
+    /* gallery */
+    .gallery{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        height: inherit;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    
 }
