@@ -16,7 +16,7 @@
     --very-dark-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
-    --grayish-blue: hsl(210, 4%, 67%);
+    --grayish-blue: hsl(210, 4%,Recents Travaux 67%);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -31,10 +31,9 @@
     list-style-type: none;
     text-decoration: none;
 }
-a,
-a:active,
-a:visited{
-    color: black;
+
+a.article-link:visited{
+    color: inherit;
 }
 
 html {
@@ -465,20 +464,14 @@ footer .socials {
     opacity: 0.5;
     border-radius: 7.5px;
 }
-.article-link::after:hover{
-    content: '';
-    display: block;
-    width: 130px;
-    height: 10px;
-    background-color: var(--yellow);
-    position: relative;
-    top: -8px;
-    left: -10px;
-    z-index: -1;
-    opacity: 0.5;
-    border-radius: 7.5px;
+.article-link:hover::after{
+    animation: remplissage 0.025s infinite;
 }
-
+@keyframes remplissage {
+    0% {opacity: 0.5;}
+    50%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
 
 /* arrow animation */
 #hero a .hero-arrow{
