@@ -32,7 +32,7 @@
     text-decoration: none;
 }
 
-a.article-link:visited{
+a .article-link:visited{
     color: inherit;
 }
 
@@ -219,9 +219,10 @@ p.dark-moderate {
 .testimonials {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 12vh;
+    padding: 55px;
+    height: 50vh;
 }
 
 .testimonials h3 {
@@ -236,7 +237,7 @@ p.dark-moderate {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 5vw;
+    gap: 25px;
 
 }
 
@@ -245,7 +246,7 @@ p.dark-moderate {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    gap: 5vh;
     text-align: center;
 }
 
@@ -289,11 +290,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 5vh;
     gap: 5vh;
+    height: 50vh;;
 }
 
-.logo {
+.logo,
+footer a {
     color: var(--dark-desaturated)
 }
 
@@ -315,6 +319,11 @@ footer .socials {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+footer .dev-socials{
+    display: flex;
+    gap: 25px;
+    text-decoration: underline;
 }
 
 /* =====================================
@@ -461,14 +470,14 @@ footer .socials {
     top: -8px;
     left: -10px;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.45;
     border-radius: 7.5px;
 }
 .article-link:hover::after{
-    animation: remplissage 0.025s infinite;
+    animation: remplissage 0.025s forwards;
 }
 @keyframes remplissage {
-    0% {opacity: 0.5;}
+    0% {opacity: 0.1;}
     50%{opacity: 0.75;}
     100%{opacity: 1;}
 }
