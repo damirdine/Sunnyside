@@ -429,6 +429,7 @@ footer .dev-socials{
     /* .testimonials */
     .testimonials {
         padding: 5vh;
+        height: auto;
     }
 
     .testimonials h3 {
