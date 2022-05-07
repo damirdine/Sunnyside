@@ -32,7 +32,7 @@
     text-decoration: none;
 }
 
-a .article-link:visited{
+a.article-link:visited{
     color: inherit;
 }
 
