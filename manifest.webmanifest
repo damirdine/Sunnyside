@@ -1,0 +1,8 @@
+{
+  "name": "Sunnyside Agency",
+  "short_name": "Sunnyside",
+  "description": "Sunnyside Agency Landing Page",
+  "start_url": "/",
+  "display": "standalone"
+}
+  
