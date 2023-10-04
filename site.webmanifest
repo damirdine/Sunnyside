@@ -3,6 +3,7 @@
   "short_name": "Sunnyside",
   "description": "Sunnyside Agency Landing Page",
   "start_url": "/sunnyside/",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "portrait"
 }
   
