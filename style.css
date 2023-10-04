@@ -339,6 +339,8 @@ footer .dev-socials{
     header {
         flex-direction: column;
         padding: 5%;
+        position: sticky;
+        background-color: #3dbeff;
     }
 
     header .header {
@@ -369,14 +371,17 @@ footer .dev-socials{
         height: 50px;
         background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, var(--white) 50%, var(--white) 100%);
         position: absolute;
-        top: 55px;
-        right: 5vw;
-
+        /* background-color: red; */
+        top: -14.6px;
+        right: 0;
     }
 
     .nav.active {
         display: flex;
-    }
+        position: absolute;
+        margin-top: 45px;
+        width: 90%;
+   }
 
     header nav a {
         color: var(--dark-grayish-blue);
@@ -504,7 +509,7 @@ footer .dev-socials{
 ========================================
 ========================================
  */
-@media screen and (display-mode: standalone) {
+/* @media screen and (display-mode: standalone) {
     header {
         position: sticky;
         padding-top: 55px;
@@ -513,4 +518,4 @@ footer .dev-socials{
     #hero {
         padding-top: 55px;
     }
-}
+} */
