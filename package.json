@@ -1,0 +1,23 @@
+{
+  "name": "sunnyside",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damirdine/sunnyside.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damirdine/sunnyside/issues"
+  },
+  "homepage": "https://github.com/damirdine/sunnyside#readme",
+  "dependencies": {
+    "pwa-asset-generator": "^6.3.1"
+  }
+}
