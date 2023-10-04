@@ -497,3 +497,20 @@ footer .dev-socials{
       transform: translateY(10px);
     }
 }
+
+/* =====================================
+========================================
+            PWA
+========================================
+========================================
+ */
+@media screen and (display-mode: standalone) {
+    header {
+        position: sticky;
+        padding-top: 55px;
+        background-color: #3dbeff;
+    }
+    #hero {
+        padding-top: 55px;
+    }
+}
